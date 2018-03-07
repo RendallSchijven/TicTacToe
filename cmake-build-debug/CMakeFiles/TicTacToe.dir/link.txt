@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/TicTacToe.dir/ttt_mc.cpp.o CMakeFiles/TicTacToe.dir/ttt.cpp.o  -o TicTacToe.exe -Wl,--out-implib,libTicTacToe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
