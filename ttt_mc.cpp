@@ -42,10 +42,19 @@ void mcUpdateScores(std::array<int,9> &scores, const State &board, const Player 
 
     for(int i = 0; i < 9; i++)
     {
-        if(winner != player && board[i] == Player::X) scores[i] += mc_other;
-        else if(winner != player && board[i] == Player::O) scores[i] -= mc_other;
-        else if(winner == player && board[i] == Player::O) scores[i] += mc_match;
-        else if(winner == player && board[i] == Player::X) scores[i] -= mc_match;
+        //If human won
+        if(winner != player)
+        {
+            if(board[i] == Player::X) scores[i] += mc_other;
+            if(board[i] == Player::O) scores[i] -= mc_match;
+        }
+
+        //If code won
+        if(winner == player)
+        {
+            if(board[i] == Player::O) scores[i] += mc_match;
+            if(board[i] == Player::X) scores[i] -= mc_other;
+        }
     }
 }
 
