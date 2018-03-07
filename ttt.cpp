@@ -44,8 +44,14 @@ State doMove(const State &state, const Move &m)
     int countX = 0;
     int countO = 0;
     for (int i=0; i<9; i++) {
-        if (result[i] == Player::X) countX++;
-        else if(result[i] == Player::O) countO++;
+        if (result[i] == Player::X)
+        {
+            countX++;
+        }
+        else if(result[i] == Player::O)
+        {
+            countO++;
+        }
     }
     result[m] = (countX > countO ? Player::O : Player::X);
     return result;
