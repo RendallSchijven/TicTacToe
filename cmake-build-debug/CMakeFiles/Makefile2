@@ -60,39 +60,76 @@ CMAKE_SOURCE_DIR = /cygdrive/c/Users/renda/Desktop/Git/TicTacToe
 CMAKE_BINARY_DIR = /cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/TicTacToe.dir
+# Target rules for target CMakeFiles/TicTacToeTs.dir
 
 # All Build rule for target.
-CMakeFiles/TicTacToe.dir/all:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/depend
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target TicTacToe"
-.PHONY : CMakeFiles/TicTacToe.dir/all
+CMakeFiles/TicTacToeTs.dir/all:
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/depend
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target TicTacToeTs"
+.PHONY : CMakeFiles/TicTacToeTs.dir/all
 
 # Include target in all.
-all: CMakeFiles/TicTacToe.dir/all
+all: CMakeFiles/TicTacToeTs.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/TicTacToe.dir/rule: cmake_check_build_system
+CMakeFiles/TicTacToeTs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TicTacToe.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TicTacToeTs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/TicTacToe.dir/rule
+.PHONY : CMakeFiles/TicTacToeTs.dir/rule
 
 # Convenience name for target.
-TicTacToe: CMakeFiles/TicTacToe.dir/rule
+TicTacToeTs: CMakeFiles/TicTacToeTs.dir/rule
 
-.PHONY : TicTacToe
-
-# clean rule for target.
-CMakeFiles/TicTacToe.dir/clean:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/clean
-.PHONY : CMakeFiles/TicTacToe.dir/clean
+.PHONY : TicTacToeTs
 
 # clean rule for target.
-clean: CMakeFiles/TicTacToe.dir/clean
+CMakeFiles/TicTacToeTs.dir/clean:
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/clean
+.PHONY : CMakeFiles/TicTacToeTs.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/TicTacToeTs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TicTacToeMc.dir
+
+# All Build rule for target.
+CMakeFiles/TicTacToeMc.dir/all:
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/depend
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target TicTacToeMc"
+.PHONY : CMakeFiles/TicTacToeMc.dir/all
+
+# Include target in all.
+all: CMakeFiles/TicTacToeMc.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TicTacToeMc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TicTacToeMc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/TicTacToeMc.dir/rule
+
+# Convenience name for target.
+TicTacToeMc: CMakeFiles/TicTacToeMc.dir/rule
+
+.PHONY : TicTacToeMc
+
+# clean rule for target.
+CMakeFiles/TicTacToeMc.dir/clean:
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/clean
+.PHONY : CMakeFiles/TicTacToeMc.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/TicTacToeMc.dir/clean
 
 .PHONY : clean
 

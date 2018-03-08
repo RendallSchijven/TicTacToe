@@ -11,10 +11,26 @@ enum class PlayerType { Human, Computer };
 
 int eval(const State &board, const Player &player)
 {
+
 }
 
-Move alphaBeta(const State &board, int ply)
+Move alphaBeta(const State &board, int depth)
 {
+    Move best;
+    State temp = board;
+    std::vector<Move> moves = getMoves(board);
+
+    if(!depth == 0)
+    {
+        while(moves.size() > 0)
+        {
+            eval(temp, getCurrentPlayer(temp));
+
+            moves = getMoves(board);
+        }
+    }
+
+    return best;
 }
 
 int main()

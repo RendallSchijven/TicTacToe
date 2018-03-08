@@ -20,16 +20,7 @@ State mcTrial(const State &board)
 
     while(moves.size() > 0)
     {
-        std::vector<int> empty;
-
-        for (int i=0; i<9; i++) {
-            if (testBoard[i] == Player::None)
-            {
-                empty.push_back(i);
-            }
-        }
-
-        Move m = empty[rand() % empty.size()];
+        Move m = moves[rand() % moves.size()];
         testBoard = doMove(testBoard, m);
         moves = getMoves(testBoard);
     }

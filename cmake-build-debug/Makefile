@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TicTacToe
+# Target rules for targets named TicTacToeTs
 
 # Build rule for target.
-TicTacToe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TicTacToe
-.PHONY : TicTacToe
+TicTacToeTs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TicTacToeTs
+.PHONY : TicTacToeTs
 
 # fast build rule for target.
-TicTacToe/fast:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/build
-.PHONY : TicTacToe/fast
+TicTacToeTs/fast:
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/build
+.PHONY : TicTacToeTs/fast
+
+#=============================================================================
+# Target rules for targets named TicTacToeMc
+
+# Build rule for target.
+TicTacToeMc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TicTacToeMc
+.PHONY : TicTacToeMc
+
+# fast build rule for target.
+TicTacToeMc/fast:
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/build
+.PHONY : TicTacToeMc/fast
 
 ttt.o: ttt.cpp.o
 
@@ -129,7 +142,8 @@ ttt.o: ttt.cpp.o
 
 # target to build an object file
 ttt.cpp.o:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/ttt.cpp.o
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt.cpp.o
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt.cpp.o
 .PHONY : ttt.cpp.o
 
 ttt.i: ttt.cpp.i
@@ -138,7 +152,8 @@ ttt.i: ttt.cpp.i
 
 # target to preprocess a source file
 ttt.cpp.i:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/ttt.cpp.i
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt.cpp.i
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt.cpp.i
 .PHONY : ttt.cpp.i
 
 ttt.s: ttt.cpp.s
@@ -147,8 +162,36 @@ ttt.s: ttt.cpp.s
 
 # target to generate assembly for a file
 ttt.cpp.s:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/ttt.cpp.s
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt.cpp.s
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt.cpp.s
 .PHONY : ttt.cpp.s
+
+ttt_ab.o: ttt_ab.cpp.o
+
+.PHONY : ttt_ab.o
+
+# target to build an object file
+ttt_ab.cpp.o:
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt_ab.cpp.o
+.PHONY : ttt_ab.cpp.o
+
+ttt_ab.i: ttt_ab.cpp.i
+
+.PHONY : ttt_ab.i
+
+# target to preprocess a source file
+ttt_ab.cpp.i:
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt_ab.cpp.i
+.PHONY : ttt_ab.cpp.i
+
+ttt_ab.s: ttt_ab.cpp.s
+
+.PHONY : ttt_ab.s
+
+# target to generate assembly for a file
+ttt_ab.cpp.s:
+	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt_ab.cpp.s
+.PHONY : ttt_ab.cpp.s
 
 ttt_mc.o: ttt_mc.cpp.o
 
@@ -156,7 +199,7 @@ ttt_mc.o: ttt_mc.cpp.o
 
 # target to build an object file
 ttt_mc.cpp.o:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/ttt_mc.cpp.o
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt_mc.cpp.o
 .PHONY : ttt_mc.cpp.o
 
 ttt_mc.i: ttt_mc.cpp.i
@@ -165,7 +208,7 @@ ttt_mc.i: ttt_mc.cpp.i
 
 # target to preprocess a source file
 ttt_mc.cpp.i:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/ttt_mc.cpp.i
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt_mc.cpp.i
 .PHONY : ttt_mc.cpp.i
 
 ttt_mc.s: ttt_mc.cpp.s
@@ -174,7 +217,7 @@ ttt_mc.s: ttt_mc.cpp.s
 
 # target to generate assembly for a file
 ttt_mc.cpp.s:
-	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/ttt_mc.cpp.s
+	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt_mc.cpp.s
 .PHONY : ttt_mc.cpp.s
 
 # Help Target
@@ -185,10 +228,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... TicTacToe"
+	@echo "... TicTacToeTs"
+	@echo "... TicTacToeMc"
 	@echo "... ttt.o"
 	@echo "... ttt.i"
 	@echo "... ttt.s"
+	@echo "... ttt_ab.o"
+	@echo "... ttt_ab.i"
+	@echo "... ttt_ab.s"
 	@echo "... ttt_mc.o"
 	@echo "... ttt_mc.i"
 	@echo "... ttt_mc.s"
