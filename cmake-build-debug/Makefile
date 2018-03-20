@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TicTacToeTs
+# Target rules for targets named TicTacToeAb
 
 # Build rule for target.
-TicTacToeTs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TicTacToeTs
-.PHONY : TicTacToeTs
+TicTacToeAb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TicTacToeAb
+.PHONY : TicTacToeAb
 
 # fast build rule for target.
-TicTacToeTs/fast:
-	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/build
-.PHONY : TicTacToeTs/fast
+TicTacToeAb/fast:
+	$(MAKE) -f CMakeFiles/TicTacToeAb.dir/build.make CMakeFiles/TicTacToeAb.dir/build
+.PHONY : TicTacToeAb/fast
 
 #=============================================================================
 # Target rules for targets named TicTacToeMc
@@ -142,7 +142,7 @@ ttt.o: ttt.cpp.o
 
 # target to build an object file
 ttt.cpp.o:
-	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt.cpp.o
+	$(MAKE) -f CMakeFiles/TicTacToeAb.dir/build.make CMakeFiles/TicTacToeAb.dir/ttt.cpp.o
 	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt.cpp.o
 .PHONY : ttt.cpp.o
 
@@ -152,7 +152,7 @@ ttt.i: ttt.cpp.i
 
 # target to preprocess a source file
 ttt.cpp.i:
-	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt.cpp.i
+	$(MAKE) -f CMakeFiles/TicTacToeAb.dir/build.make CMakeFiles/TicTacToeAb.dir/ttt.cpp.i
 	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt.cpp.i
 .PHONY : ttt.cpp.i
 
@@ -162,7 +162,7 @@ ttt.s: ttt.cpp.s
 
 # target to generate assembly for a file
 ttt.cpp.s:
-	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt.cpp.s
+	$(MAKE) -f CMakeFiles/TicTacToeAb.dir/build.make CMakeFiles/TicTacToeAb.dir/ttt.cpp.s
 	$(MAKE) -f CMakeFiles/TicTacToeMc.dir/build.make CMakeFiles/TicTacToeMc.dir/ttt.cpp.s
 .PHONY : ttt.cpp.s
 
@@ -172,7 +172,7 @@ ttt_ab.o: ttt_ab.cpp.o
 
 # target to build an object file
 ttt_ab.cpp.o:
-	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt_ab.cpp.o
+	$(MAKE) -f CMakeFiles/TicTacToeAb.dir/build.make CMakeFiles/TicTacToeAb.dir/ttt_ab.cpp.o
 .PHONY : ttt_ab.cpp.o
 
 ttt_ab.i: ttt_ab.cpp.i
@@ -181,7 +181,7 @@ ttt_ab.i: ttt_ab.cpp.i
 
 # target to preprocess a source file
 ttt_ab.cpp.i:
-	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt_ab.cpp.i
+	$(MAKE) -f CMakeFiles/TicTacToeAb.dir/build.make CMakeFiles/TicTacToeAb.dir/ttt_ab.cpp.i
 .PHONY : ttt_ab.cpp.i
 
 ttt_ab.s: ttt_ab.cpp.s
@@ -190,7 +190,7 @@ ttt_ab.s: ttt_ab.cpp.s
 
 # target to generate assembly for a file
 ttt_ab.cpp.s:
-	$(MAKE) -f CMakeFiles/TicTacToeTs.dir/build.make CMakeFiles/TicTacToeTs.dir/ttt_ab.cpp.s
+	$(MAKE) -f CMakeFiles/TicTacToeAb.dir/build.make CMakeFiles/TicTacToeAb.dir/ttt_ab.cpp.s
 .PHONY : ttt_ab.cpp.s
 
 ttt_mc.o: ttt_mc.cpp.o
@@ -228,7 +228,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... TicTacToeTs"
+	@echo "... TicTacToeAb"
 	@echo "... TicTacToeMc"
 	@echo "... ttt.o"
 	@echo "... ttt.i"

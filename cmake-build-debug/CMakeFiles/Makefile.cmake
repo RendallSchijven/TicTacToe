@@ -48,6 +48,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/TicTacToeTs.dir/DependInfo.cmake"
+  "CMakeFiles/TicTacToeAb.dir/DependInfo.cmake"
   "CMakeFiles/TicTacToeMc.dir/DependInfo.cmake"
   )

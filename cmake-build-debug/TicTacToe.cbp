@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="TicTacToeTs">
-				<Option output="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/TicTacToeTs.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="TicTacToeAb">
+				<Option output="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/TicTacToeAb.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +52,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 TicTacToeTs"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 TicTacToeAb"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="TicTacToeTs/fast">
-				<Option output="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/TicTacToeTs.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="TicTacToeAb/fast">
+				<Option output="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/TicTacToeAb.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,7 +73,7 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 TicTacToeTs/fast"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 TicTacToeAb/fast"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -123,15 +123,15 @@
 			</Target>
 		</Build>
 		<Unit filename="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt.cpp">
-			<Option target="TicTacToeTs"/>
+			<Option target="TicTacToeAb"/>
 			<Option target="TicTacToeMc"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt.h">
-			<Option target="TicTacToeTs"/>
+			<Option target="TicTacToeAb"/>
 			<Option target="TicTacToeMc"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt_ab.cpp">
-			<Option target="TicTacToeTs"/>
+			<Option target="TicTacToeAb"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt_mc.cpp">
 			<Option target="TicTacToeMc"/>
