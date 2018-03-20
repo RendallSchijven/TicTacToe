@@ -9,7 +9,7 @@
 
 enum class PlayerType { Human, Computer };
 
-/*int getScore(const Player player, const State board, int ply){
+int eval(const Player player, const State board, int ply){
     Player opponent = (player == Player::X) ? Player::O : Player::X;
 
     if(getWinner(board) == player){
@@ -18,73 +18,6 @@ enum class PlayerType { Human, Computer };
     else if(getWinner(board) == opponent){
         return  ply - 10;
     } else return 0;
-}*/
-
-int evaluateLine(const State &board, const Player &player, int row1, int col1, int row2, int col2, int row3, int col3)
-{
-    int score = 0;
-
-    // First cell
-    if (board[row1 + 3 * col1] == Player::O) {
-        score = 1;
-    } else if (board[row1 + 3 * col1] == Player::X) {
-        score = -1;
-    }
-
-    // Second cell
-    if (board[row2 + 3 * col2] == Player::O) {
-        if (score == 1) {   // cell1 is mySeed
-            score = 10;
-        } else if (score == -1) {  // cell1 is oppSeed
-            return 0;
-        } else {  // cell1 is empty
-            score = 1;
-        }
-    } else if (board[row2 + 3 * col2] == Player::X) {
-        if (score == -1) { // cell1 is oppSeed
-            score = -10;
-        } else if (score == 1) { // cell1 is mySeed
-            return 0;
-        } else {  // cell1 is empty
-            score = -1;
-        }
-    }
-
-    // Third cell
-    if (board[row3 + 3 * col3] == Player::O) {
-        if (score > 0) {  // cell1 and/or cell2 is mySeed
-            score *= 10;
-        } else if (score < 0) {  // cell1 and/or cell2 is oppSeed
-            return 0;
-        } else {  // cell1 and cell2 are empty
-            score = 1;
-        }
-    } else if (board[row3 + 3 * col3] == Player::X) {
-        if (score < 0) {  // cell1 and/or cell2 is oppSeed
-            score *= 10;
-        } else if (score > 1) {  // cell1 and/or cell2 is mySeed
-            return 0;
-        } else {  // cell1 and cell2 are empty
-            score = -1;
-        }
-    }
-    return score;
-}
-
-int eval(const State &board, const Player &player)
-{
-    int score = 0;
-
-    score += evaluateLine(board, player, 0, 0, 0, 1, 0, 2);  // row 0
-    score += evaluateLine(board, player, 1, 0, 1, 1, 1, 2);  // row 1
-    score += evaluateLine(board, player, 2, 0, 2, 1, 2, 2);  // row 2
-    score += evaluateLine(board, player, 0, 0, 1, 0, 2, 0);  // col 0
-    score += evaluateLine(board, player, 0, 1, 1, 1, 2, 1);  // col 1
-    score += evaluateLine(board, player, 0, 2, 1, 2, 2, 2);  // col 2
-    score += evaluateLine(board, player, 0, 0, 1, 1, 2, 2);  // diagonal
-    score += evaluateLine(board, player, 0, 2, 1, 1, 2, 0);  // alternate diagonal
-
-    return score;
 }
 
 std::vector<int> minimax(const State &board, const Player &player, int ply, int alpha, int beta)
@@ -95,8 +28,7 @@ std::vector<int> minimax(const State &board, const Player &player, int ply, int 
     int bestMove = -1;
 
     if(ply == 0 || moves.size() == 0){
-        score = eval(board, player);
-        //score = getScore(player, board, ply);
+        score = eval(player, board, ply);
         return {score,bestMove};
     }
     else
@@ -105,7 +37,7 @@ std::vector<int> minimax(const State &board, const Player &player, int ply, int 
         {
             State tempboard = doMove(board, m);;
 
-            if(player == Player::O)
+            if(player == Player::O) //Computer
             {
                 score = minimax(tempboard, Player::X, ply--, alpha, beta)[0];
 
@@ -115,7 +47,7 @@ std::vector<int> minimax(const State &board, const Player &player, int ply, int 
                     bestMove = m;
                 }
             }
-            else
+            else //Human
             {
                 score = minimax(tempboard, Player::O, ply--, alpha, beta)[0];
 
