@@ -100,7 +100,7 @@ int main()
 			std::cin >> m;
 			board = doMove(board, m);
 		} else {
-			board = doMove(board, alphaBeta(board, 5));
+			board = doMove(board, alphaBeta(board, 9));
 		}
 		std::cout << board << std::endl;
 		moves = getMoves(board);
