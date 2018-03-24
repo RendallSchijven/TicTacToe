@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7a550eaf-a641-404a-bb36-8602b1dd45da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ttt_ab.cpp" afterPath="$PROJECT_DIR$/ttt_ab.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +30,7 @@
       <file leaf-file-name="ttt_ab.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt_ab.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
+            <state relative-caret-position="980">
               <caret line="101" column="16" lean-forward="true" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
               <folding>
                 <element signature="e#76#95#0" expanded="true" />
@@ -174,7 +173,7 @@
       <workItem from="1521555974685" duration="2030000" />
       <workItem from="1521559592621" duration="739000" />
       <workItem from="1521582256983" duration="15000" />
-      <workItem from="1521661183083" duration="33000" />
+      <workItem from="1521661183083" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="Working tic tac toe using monte carlo">
       <created>1520447414119</created>
@@ -218,14 +217,22 @@
       <option name="project" value="LOCAL" />
       <updated>1521560273757</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated plies to 9">
+      <created>1521661227529</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1521661227529</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28475000" />
+    <option name="totallyTimeSpent" value="28497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1369863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -260,7 +267,8 @@
     <MESSAGE value="Improved monte carlo" />
     <MESSAGE value="Tic tac toe alpha beta using line eval" />
     <MESSAGE value="Tic tac toe alpha beta using score function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tic tac toe alpha beta using score function" />
+    <MESSAGE value="Updated plies to 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated plies to 9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,7 +556,7 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/ttt_ab.cpp" />
     <entry file="file://$PROJECT_DIR$/ttt_ab.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
+        <state relative-caret-position="980">
           <caret line="101" column="16" lean-forward="true" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
           <folding>
             <element signature="e#76#95#0" expanded="true" />

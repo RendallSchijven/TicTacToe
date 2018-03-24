@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt.cpp
+ttt.h
+/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt.h
+
+/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt.h
+tuple
+-
+array
+-
+vector
+-
+ctime
+-
+random
+-
+iterator
+-
+iostream
+-
+
+/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt_ab.cpp
+iostream
+-
+algorithm
+-
+map
+-
+limits
+-
+ttt.h
+/cygdrive/c/Users/renda/Desktop/Git/TicTacToe/ttt.h
+
